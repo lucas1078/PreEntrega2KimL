@@ -4,10 +4,6 @@
     margin: 0.5%;
     font-size: 150%;
 }
-.img-carousel {
-    
-    object-fit: cover; /* Ajusta el modo de ajuste de la imagen */
-  }
 .espacio {
     background-color: rgb(32, 32, 32);
     color:aliceblue
