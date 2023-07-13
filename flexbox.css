@@ -1,0 +1,16 @@
+.cajas{
+    display: flex;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    padding: 10px;
+    margin:10px;
+    border: solid;
+    border-radius: 8px;
+}
+.caja h3{
+    text-align: center;
+    
+}

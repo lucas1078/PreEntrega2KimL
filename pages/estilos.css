@@ -1,0 +1,147 @@
+
+.nav-item {
+    padding: 0.5% ;
+    margin: 0.5%;
+    font-size: 150%;
+}
+.img-carousel {
+    
+    object-fit: cover; /* Ajusta el modo de ajuste de la imagen */
+  }
+.espacio {
+    background-color: rgb(32, 32, 32);
+    color:aliceblue
+}
+.black {
+    background-color: rgb(36, 36, 36);
+    color:aliceblue
+}
+.grey {
+    background-color: rgb(51, 51, 51);
+    color:aliceblue
+}
+.comentarios{
+    color:rgb(3, 3, 53);
+    background-image: url(../multimedia/img/fondo\ fiesta.jpg);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    height: 600px;
+
+}
+.contactos{
+    color:rgb(3, 3, 53);
+    background-image: url(../multimedia/img/fondo\ fiesta.jpg);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    height: 600px;
+
+}
+.nosotros {
+    color:rgb(3, 3, 53);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../multimedia/img/equipo\ de\ trabajo.jpeg);  
+    background-size: cover;
+    border-radius: 20px;
+    height: 500px;
+    
+}
+   
+
+
+.evento{
+    width: 600px;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px 5px;
+    font-size: 150%;  
+}
+.evento img{ 
+    max-width: 100% ;
+    max-height: 100% ;
+    border-radius: 20px;
+}
+
+.buenosaires,
+.cordoba{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.fcomentarios{
+    width:70%
+    
+}
+.fcomentarios input,
+.fcomentarios textarea{
+    margin: 10px 10%;
+}
+
+.formulario1{
+    display:flex;
+    flex-direction: column;
+}
+.formulario1 label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.formulario1 label,
+.formulario1 input,
+.formulario1 textarea {
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.ccompra{
+    background-image: url(../multimedia/img/fondoformulario.jpg);
+    border-radius: 20px;
+}
+.fcompra{
+    width:600px;
+    margin:auto;
+    background-color: transparent;
+    color:aliceblue;
+    
+}
+
+.a{ 
+    display:flex;
+    flex-direction: column;
+
+}
+.grids{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grilla div{
+    margin: 10px;
+    padding: 10px;
+}
+    
+
+@media(max-width: 600px){
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .grids{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .buenosaires,
+    .cordoba{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 800px){
+
+}
