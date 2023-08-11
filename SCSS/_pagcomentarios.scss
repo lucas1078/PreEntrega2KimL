@@ -1,0 +1,27 @@
+.comentarios{
+    .intro-comentarios{
+        color:rgb(3, 3, 53);
+        background-image: url(../multimedia/img/fondo\ fiesta.jpg);
+        background-size: $background;
+        border-radius: $border;
+        height: 600px;
+    }
+    .fcomentarios{
+        width:60%;
+        padding: 2%;
+        margin: 2%;
+        input,
+     textarea{
+        margin: 10px;
+        padding: 10px;
+    } 
+    }
+    .animate__animated .animate__rubberBand { /*animacion*/
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+      }
+      
+}

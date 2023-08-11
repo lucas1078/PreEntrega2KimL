@@ -1,0 +1,27 @@
+.contactos{
+    .intro-contactos{
+        color:rgb(3, 3, 53);
+        background-image: url(../multimedia/img/fondo\ fiesta.jpg);
+        background-size: $background;
+        border-radius: $border;
+        height: 600px;
+    
+    }
+    .grids{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    @media (max-width: 800px) {
+        .grids {
+          grid-template-columns: 1fr;
+        }
+    }
+    .animate__animated .animate__rubberBand {
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+      }
+      
+}

@@ -1,0 +1,24 @@
+.compra{
+    background-image: url(../multimedia/img/fondoformulario.jpg);
+    border-radius: $border;
+    .fcompra{
+        width:600px;
+        margin:auto;
+        background-color: transparent;
+        color:aliceblue;
+        .a{ 
+            display:flex;
+            flex-direction: column;
+        
+        } 
+        
+    }
+    .animate__animated .animate__rubberBand {
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+      }
+      
+}

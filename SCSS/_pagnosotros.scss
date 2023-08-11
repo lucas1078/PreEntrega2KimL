@@ -1,0 +1,34 @@
+.nosotros{
+    .intro-nosotros {
+        color:aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url(../multimedia/img/equipo\ de\ trabajo.jpeg);  
+        background-size: cover;
+        border-radius: $border;
+        height: 500px;
+        
+    }
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        div{
+            margin: 10px;
+            padding: 10px;
+        }
+    @media (max-width: 800px) {
+            .grilla {
+              grid-template-columns: 1fr;
+            }
+    }
+    }
+    .animate__animated .animate__rubberBand {
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+      }
+      
+}

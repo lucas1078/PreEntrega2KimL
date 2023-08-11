@@ -1,0 +1,33 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .div{
+        margin:auto;
+        &:hover + ul {
+            color:bisque;
+        }
+    }
+    .animate__animated .animate__rubberBand {
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+      }
+      
+    .redes{
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 30px;
+            margin:auto;
+            
+            &:hover {/*transicion logos de redes sociales*/
+                transform: scale(1.1);
+                transition: transform 0.3s;
+          }
+        }
+
+    }
+    
+}

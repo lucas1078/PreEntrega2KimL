@@ -1,0 +1,44 @@
+/* index*/
+.navbar-carousel-img {  /*trate de aplicar hover para las imagenes del carrousel*/
+  &:hover {
+      transform: scale(1.1); 
+      transition: transform 0.3s;
+  }
+}
+
+.proximos-eventos{
+    .evento{
+        width: 600px;
+        border: solid 2px;
+        border-radius: $border;
+        padding: 5px;
+        margin: 10px 5px;
+        font-size: 150%;  
+        img{ 
+            max-width: 100% ;
+            max-height: 100% ;
+            border-radius: 20px;
+            
+
+            &:hover {  /*transicion*/
+                transform: scale(1.1);
+                transition: transform 0.3s;
+          }
+        }
+    }
+  
+    .buenosaires,
+    .cordoba{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+    .buenosaires,
+    .cordoba {
+      grid-template-columns: 1fr;
+    }
+  }

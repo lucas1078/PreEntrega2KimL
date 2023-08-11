@@ -1,143 +1,206 @@
-
-.nav-item {
-    padding: 0.5% ;
-    margin: 0.5%;
-    font-size: 150%;
-}
+/*variables*/
 .espacio {
-    background-color: rgb(32, 32, 32);
-    color:aliceblue
+  background-color: rgb(32, 32, 32);
+  color: aliceblue;
 }
+
 .black {
-    background-color: rgb(36, 36, 36);
-    color:aliceblue
+  background-color: rgb(36, 36, 36);
+  color: aliceblue;
 }
+
 .grey {
-    background-color: rgb(51, 51, 51);
-    color:aliceblue
-}
-.comentarios{
-    color:rgb(3, 3, 53);
-    background-image: url(../multimedia/img/fondo\ fiesta.jpg);
-    background-size: 100% 100%;
-    border-radius: 20px;
-    height: 600px;
-
-}
-.contactos{
-    color:rgb(3, 3, 53);
-    background-image: url(../multimedia/img/fondo\ fiesta.jpg);
-    background-size: 100% 100%;
-    border-radius: 20px;
-    height: 600px;
-
-}
-.nosotros {
-    color:rgb(3, 3, 53);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-image: url(../multimedia/img/equipo\ de\ trabajo.jpeg);  
-    background-size: cover;
-    border-radius: 20px;
-    height: 500px;
-    
-}
-   
-
-
-.evento{
-    width: 600px;
-    border: solid 2px;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 10px 5px;
-    font-size: 150%;  
-}
-.evento img{ 
-    max-width: 100% ;
-    max-height: 100% ;
-    border-radius: 20px;
+  background-color: rgb(51, 51, 51);
+  color: aliceblue;
 }
 
-.buenosaires,
-.cordoba{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.boton:hover {
+  background-color: rgba(122, 59, 223, 0.774);
 }
 
-
-.fcomentarios{
-    width:70%
-    
+.formulario1 {
+  display: flex;
+  flex-direction: column;
 }
-.fcomentarios input,
-.fcomentarios textarea{
-    margin: 10px 10%;
-}
-
-.formulario1{
-    display:flex;
-    flex-direction: column;
-}
-.formulario1 label{
-    font-size: 20px;
-    font-weight: bold;
+.formulario1 label {
+  font-size: 20px;
+  font-weight: bold;
 }
 .formulario1 label,
 .formulario1 input,
 .formulario1 textarea {
-    padding: 20px;
-    border-radius: 10px;
-
-}
-.ccompra{
-    background-image: url(../multimedia/img/fondoformulario.jpg);
-    border-radius: 20px;
-}
-.fcompra{
-    width:600px;
-    margin:auto;
-    background-color: transparent;
-    color:aliceblue;
-    
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.a{ 
-    display:flex;
-    flex-direction: column;
+/*en variables coloque todos los elementos que se repetian en todas las paginas*/
+/* index*/
+.navbar-carousel-img { /*trate de aplicar hover para las imagenes del carrousel*/ }
+.navbar-carousel-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
 
+.proximos-eventos .evento {
+  width: 600px;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px 5px;
+  font-size: 150%;
 }
-.grids{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.proximos-eventos .evento img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
 }
-.grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.proximos-eventos .evento img:hover { /*transicion*/
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
-.grilla div{
-    margin: 10px;
-    padding: 10px;
+.proximos-eventos .buenosaires,
+.proximos-eventos .cordoba {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-    
 
-@media(max-width: 600px){
-    .grilla{
-        display: grid;
-        grid-template-columns: 1fr;
-
-    }
-    .grids{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .buenosaires,
-    .cordoba{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 800px) {
+  .buenosaires,
+  .cordoba {
+    grid-template-columns: 1fr;
+  }
 }
-@media(max-width: 800px){
-
+.nosotros .intro-nosotros {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(../multimedia/img/equipo\ de\ trabajo.jpeg);
+  background-size: cover;
+  border-radius: 20px;
+  height: 500px;
 }
+.nosotros .grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.nosotros .grilla div {
+  margin: 10px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .nosotros .grilla .grilla {
+    grid-template-columns: 1fr;
+  }
+}
+.nosotros .animate__animated .animate__rubberBand {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.contactos .intro-contactos {
+  color: rgb(3, 3, 53);
+  background-image: url(../multimedia/img/fondo\ fiesta.jpg);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  height: 600px;
+}
+.contactos .grids {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@media (max-width: 800px) {
+  .contactos .grids {
+    grid-template-columns: 1fr;
+  }
+}
+.contactos .animate__animated .animate__rubberBand {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.compra {
+  background-image: url(../multimedia/img/fondoformulario.jpg);
+  border-radius: 20px;
+}
+.compra .fcompra {
+  width: 600px;
+  margin: auto;
+  background-color: transparent;
+  color: aliceblue;
+}
+.compra .fcompra .a {
+  display: flex;
+  flex-direction: column;
+}
+.compra .animate__animated .animate__rubberBand {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.comentarios .intro-comentarios {
+  color: rgb(3, 3, 53);
+  background-image: url(../multimedia/img/fondo\ fiesta.jpg);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  height: 600px;
+}
+.comentarios .fcomentarios {
+  width: 60%;
+  padding: 2%;
+  margin: 2%;
+}
+.comentarios .fcomentarios input,
+.comentarios .fcomentarios textarea {
+  margin: 10px;
+  padding: 10px;
+}
+.comentarios .animate__animated .animate__rubberBand { /*animacion*/
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.nav-item {
+  padding: 0.5%;
+  margin: 0.5%;
+  font-size: 150%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer .div {
+  margin: auto;
+}
+.footer .div:hover + ul {
+  color: bisque;
+}
+.footer .animate__animated .animate__rubberBand {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.footer .redes {
+  display: flex;
+  flex-direction: row;
+}
+.footer .redes img {
+  width: 30px;
+  margin: auto;
+}
+.footer .redes img:hover { /*transicion logos de redes sociales*/
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+/*# sourceMappingURL=estilos.css.map */
